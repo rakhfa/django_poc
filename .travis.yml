@@ -1,0 +1,15 @@
+dist: trusty
+language: python
+python:
+  - "3.6"
+
+install:
+  - pip install -r requirements.txt
+script:
+  - py.test  --cov-report term --cov=.
+services:
+  - sqlite
+env:
+  - DJANGO=2.2.6
+after_success:
+  - codecov
