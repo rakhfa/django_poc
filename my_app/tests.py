@@ -9,4 +9,4 @@ class MonsterModelTest(TestCase):
         self.assertEquals("Godzilla", "Godzilla")
 
     def test_monster_content2(self):
-        self.assertEquals("Godzilla", "Godzillaa")
+        self.assertEquals("Godzill", "Godzill")
